@@ -1,0 +1,571 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.inilabs.foodking.delivery"
+4    android:versionCode="8"
+5    android:versionName="1.0.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:4:1-63
+15-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:4:18-60
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:3:5-81
+16-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:3:22-78
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:5:1-75
+17-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:5:18-72
+18    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+18-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:6:1-85
+18-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:6:18-82
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:7:1-64
+19-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:7:18-61
+20    <uses-permission android:name="android.hardware.location.gps" />
+20-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:8:1-65
+20-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:8:18-62
+21    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+21-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:9:1-75
+21-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:9:18-72
+22    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+22-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:10:1-70
+22-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:10:18-67
+23
+24    <queries>
+24-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:46:9-51:15
+25        <intent>
+25-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:47:9-50:18
+26            <action android:name="android.intent.action.VIEW" />
+26-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:48:13-65
+26-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:48:21-62
+27
+28            <data android:scheme="tel" />
+28-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:49:13-42
+28-->E:\Company projects\New folder (17)\app source code\foodking-delivery-app\android\app\src\main\AndroidManifest.xml:49:19-39
+29        </intent>
+30
+31        <package android:name="com.google.android.apps.maps" />
+31-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-64
+31-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-61
+32        <package android:name="com.google.android.apps.mapslite" />
+32-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-68
+32-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:11:18-65
+33        <package android:name="com.autonavi.minimap" />
+33-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-56
+33-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:12:18-53
+34        <package android:name="com.baidu.BaiduMap" />
+34-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-54
+34-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:13:18-51
+35        <package android:name="com.waze" />
+35-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-44
+35-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:14:18-41
+36        <package android:name="ru.yandex.yandexnavi" />
+36-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-56
+36-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:15:18-53
+37        <package android:name="ru.yandex.yandexmaps" />
+37-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-56
+37-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:16:18-53
+38        <package android:name="com.citymapper.app.release" />
+38-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:17:9-62
+38-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:17:18-59
+39        <package android:name="com.mapswithme.maps.pro" />
+39-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-59
+39-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:18:18-56
+40        <package android:name="net.osmand" />
+40-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-46
+40-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:19:18-43
+41        <package android:name="net.osmand.plus" />
+41-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-51
+41-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:20:18-48
+42        <package android:name="ru.dublgis.dgismobile" />
+42-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-57
+42-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:21:18-54
+43        <package android:name="com.tencent.map" />
+43-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:22:9-51
+43-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:22:18-48
+44        <package android:name="com.here.app.maps" />
+44-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:23:9-53
+44-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:23:18-50
+45        <package android:name="com.huawei.maps.app" />
+45-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-55
+45-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:24:18-52
+46        <package android:name="com.alk.copilot.mapviewer" />
+46-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-61
+46-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:25:18-58
+47        <package android:name="com.tomtom.gplay.navapp" />
+47-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-59
+47-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:26:18-56
+48        <package android:name="com.tomtom.gplay.navapp.gofleet" />
+48-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:27:9-67
+48-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:27:18-64
+49        <package android:name="com.sygic.truck" />
+49-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-51
+49-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:28:18-48
+50        <package android:name="nl.flitsmeister" />
+50-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:29:9-51
+50-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:29:18-48
+51        <package android:name="nl.flitsmeister.flux" />
+51-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:30:9-56
+51-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:30:18-53
+52        <package android:name="com.nhn.android.nmap" />
+52-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:31:9-56
+52-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:31:18-53
+53        <package android:name="net.daum.android.map" />
+53-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:32:9-56
+53-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:32:18-53
+54        <package android:name="com.skt.tmap.ku" />
+54-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:33:9-51
+54-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:33:18-48
+55        <package android:name="cz.seznam.mapy" />
+55-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:34:9-50
+55-->[:map_launcher] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\map_launcher\intermediates\merged_manifest\debug\AndroidManifest.xml:34:18-47
+56    </queries>
+57
+58    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+58-->[:connectivity] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+58-->[:connectivity] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-76
+59    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+59-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
+59-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
+60    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+60-->[:flutter_local_notifications] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-66
+60-->[:flutter_local_notifications] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-63
+61    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+61-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:26:5-82
+61-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:26:22-79
+62
+63    <uses-feature
+63-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\user\.gradle\caches\transforms-3\2f970f0f99ae445a9efc7c5b03b2be39\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+64        android:glEsVersion="0x00020000"
+64-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\user\.gradle\caches\transforms-3\2f970f0f99ae445a9efc7c5b03b2be39\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+65        android:required="true" />
+65-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\user\.gradle\caches\transforms-3\2f970f0f99ae445a9efc7c5b03b2be39\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+66
+67    <permission
+67-->[androidx.core:core:1.13.1] C:\Users\user\.gradle\caches\transforms-3\457c4370b3189eff43e0b58e5077008b\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+68        android:name="com.inilabs.foodking.delivery.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+68-->[androidx.core:core:1.13.1] C:\Users\user\.gradle\caches\transforms-3\457c4370b3189eff43e0b58e5077008b\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+69        android:protectionLevel="signature" />
+69-->[androidx.core:core:1.13.1] C:\Users\user\.gradle\caches\transforms-3\457c4370b3189eff43e0b58e5077008b\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+70
+71    <uses-permission android:name="com.inilabs.foodking.delivery.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+71-->[androidx.core:core:1.13.1] C:\Users\user\.gradle\caches\transforms-3\457c4370b3189eff43e0b58e5077008b\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+71-->[androidx.core:core:1.13.1] C:\Users\user\.gradle\caches\transforms-3\457c4370b3189eff43e0b58e5077008b\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+72
+73    <application
+74        android:name="android.app.Application"
+75        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+75-->[androidx.core:core:1.13.1] C:\Users\user\.gradle\caches\transforms-3\457c4370b3189eff43e0b58e5077008b\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+76        android:debuggable="true"
+77        android:icon="@mipmap/ic_launcher"
+78        android:label="FoodKing - Delivery Boy" >
+79        <activity
+80            android:name="com.inilabs.foodking.delivery.MainActivity"
+81            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+82            android:exported="true"
+83            android:hardwareAccelerated="true"
+84            android:launchMode="singleTop"
+85            android:theme="@style/LaunchTheme"
+86            android:windowSoftInputMode="adjustResize" >
+87
+88            <!--
+89                 Specifies an Android theme to apply to this Activity as soon as
+90                 the Android process has started. This theme is visible to the user
+91                 while the Flutter UI initializes. After that, this theme continues
+92                 to determine the Window background behind the Flutter UI.
+93            -->
+94            <meta-data
+95                android:name="io.flutter.embedding.android.NormalTheme"
+96                android:resource="@style/NormalTheme" />
+97
+98            <intent-filter>
+99                <action android:name="android.intent.action.MAIN" />
+100
+101                <category android:name="android.intent.category.LAUNCHER" />
+102            </intent-filter>
+103        </activity>
+104        <!--
+105             Don't delete the meta-data below.
+106             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+107        -->
+108        <meta-data
+109            android:name="flutterEmbedding"
+110            android:value="2" />
+111        <meta-data
+112            android:name="com.google.android.geo.API_KEY"
+113            android:value="AIzaSyB3S4fcKMcU-Ll9RSPkCiwdk1jXPmrTC_c" />
+114
+115        <service
+115-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
+116            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+116-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
+117            android:exported="false"
+117-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+118            android:permission="android.permission.BIND_JOB_SERVICE" />
+118-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
+119        <service
+119-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
+120            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+120-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
+121            android:exported="false" >
+121-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+122            <intent-filter>
+122-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+123                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+123-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+123-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+124            </intent-filter>
+125        </service>
+126
+127        <receiver
+127-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
+128            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+128-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
+129            android:exported="true"
+129-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
+130            android:permission="com.google.android.c2dm.permission.SEND" >
+130-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
+131            <intent-filter>
+131-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+132                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+132-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+132-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+133            </intent-filter>
+134        </receiver>
+135
+136        <service
+136-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:9-41:19
+137            android:name="com.google.firebase.components.ComponentDiscoveryService"
+137-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:18-89
+138            android:directBootAware="true"
+138-->[com.google.firebase:firebase-common:20.4.3] C:\Users\user\.gradle\caches\transforms-3\417bbcfc212ca461a9324af564e87d38\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:32:13-43
+139            android:exported="false" >
+139-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:56:13-37
+140            <meta-data
+140-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
+141                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+141-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
+143            <meta-data
+143-->[:firebase_core] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+144                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+144-->[:firebase_core] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+145                android:value="com.google.firebase.components.ComponentRegistrar" />
+145-->[:firebase_core] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+146            <meta-data
+146-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:57:13-59:85
+147                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+147-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:58:17-122
+148                android:value="com.google.firebase.components.ComponentRegistrar" />
+148-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:59:17-82
+149            <meta-data
+149-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:60:13-62:85
+150                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+150-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:61:17-119
+151                android:value="com.google.firebase.components.ComponentRegistrar" />
+151-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:62:17-82
+152            <meta-data
+152-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\user\.gradle\caches\transforms-3\5032f25a8810d290b84b2eebd34d5199\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+153                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+153-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\user\.gradle\caches\transforms-3\5032f25a8810d290b84b2eebd34d5199\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\user\.gradle\caches\transforms-3\5032f25a8810d290b84b2eebd34d5199\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+155            <meta-data
+155-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\user\.gradle\caches\transforms-3\b4a213f5a372d7e0b5693dc4b42b415e\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+156                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+156-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\user\.gradle\caches\transforms-3\b4a213f5a372d7e0b5693dc4b42b415e\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\user\.gradle\caches\transforms-3\b4a213f5a372d7e0b5693dc4b42b415e\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+158            <meta-data
+158-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\user\.gradle\caches\transforms-3\b4a213f5a372d7e0b5693dc4b42b415e\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+159                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+159-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\user\.gradle\caches\transforms-3\b4a213f5a372d7e0b5693dc4b42b415e\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\user\.gradle\caches\transforms-3\b4a213f5a372d7e0b5693dc4b42b415e\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+161            <meta-data
+161-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\user\.gradle\caches\transforms-3\d9caf752917bd99408ff74bcfa5bfde9\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:12:13-14:85
+162                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+162-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\user\.gradle\caches\transforms-3\d9caf752917bd99408ff74bcfa5bfde9\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:13:17-116
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\user\.gradle\caches\transforms-3\d9caf752917bd99408ff74bcfa5bfde9\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:14:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-common:20.4.3] C:\Users\user\.gradle\caches\transforms-3\417bbcfc212ca461a9324af564e87d38\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:35:13-37:85
+165                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+165-->[com.google.firebase:firebase-common:20.4.3] C:\Users\user\.gradle\caches\transforms-3\417bbcfc212ca461a9324af564e87d38\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:36:17-109
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-common:20.4.3] C:\Users\user\.gradle\caches\transforms-3\417bbcfc212ca461a9324af564e87d38\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:37:17-82
+167            <meta-data
+167-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\user\.gradle\caches\transforms-3\ad166d5b08f45d95ece8d7fd64559c3a\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+168                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+168-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\user\.gradle\caches\transforms-3\ad166d5b08f45d95ece8d7fd64559c3a\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\user\.gradle\caches\transforms-3\ad166d5b08f45d95ece8d7fd64559c3a\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+170        </service>
+171
+172        <provider
+172-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
+173            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+173-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
+174            android:authorities="com.inilabs.foodking.delivery.flutterfirebasemessaginginitprovider"
+174-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
+175            android:exported="false"
+175-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
+176            android:initOrder="99" />
+176-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
+177        <provider
+177-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-19:20
+178            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+178-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-82
+179            android:authorities="com.inilabs.foodking.delivery.flutter.image_provider"
+179-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-74
+180            android:exported="false"
+180-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
+181            android:grantUriPermissions="true" >
+181-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-47
+182            <meta-data
+182-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-18:75
+183                android:name="android.support.FILE_PROVIDER_PATHS"
+183-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-67
+184                android:resource="@xml/flutter_image_picker_file_paths" />
+184-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:18:17-72
+185        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+186        <service
+186-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-33:19
+187            android:name="com.google.android.gms.metadata.ModuleDependencies"
+187-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-78
+188            android:enabled="false"
+188-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-36
+189            android:exported="false" >
+189-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-37
+190            <intent-filter>
+190-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-28:29
+191                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+191-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-94
+191-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:27:25-91
+192            </intent-filter>
+193
+194            <meta-data
+194-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:36
+195                android:name="photopicker_activity:0:required"
+195-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-63
+196                android:value="" />
+196-->[:image_picker_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:32:17-33
+197        </service>
+198        <service
+198-->[:geolocator_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:56
+199            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+199-->[:geolocator_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-77
+200            android:enabled="true"
+200-->[:geolocator_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-35
+201            android:exported="false"
+201-->[:geolocator_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+202            android:foregroundServiceType="location" />
+202-->[:geolocator_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-53
+203        <service
+203-->[:location] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-17:56
+204            android:name="com.lyokone.location.FlutterLocationService"
+204-->[:location] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-71
+205            android:enabled="true"
+205-->[:location] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-35
+206            android:exported="false"
+206-->[:location] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+207            android:foregroundServiceType="location" />
+207-->[:location] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-53
+208
+209        <activity
+209-->[:url_launcher_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+210            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+210-->[:url_launcher_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+211            android:exported="false"
+211-->[:url_launcher_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+212            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+212-->[:url_launcher_android] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+213
+214        <receiver
+214-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:29:9-40:20
+215            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+215-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:30:13-78
+216            android:exported="true"
+216-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:31:13-36
+217            android:permission="com.google.android.c2dm.permission.SEND" >
+217-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:32:13-73
+218            <intent-filter>
+218-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+219                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+219-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+219-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+220            </intent-filter>
+221
+222            <meta-data
+222-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:37:13-39:40
+223                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+223-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:38:17-92
+224                android:value="true" />
+224-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:39:17-37
+225        </receiver>
+226        <!--
+227             FirebaseMessagingService performs security checks at runtime,
+228             but set to not exported to explicitly avoid allowing another app to call it.
+229        -->
+230        <service
+230-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:46:9-53:19
+231            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+231-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:47:13-82
+232            android:directBootAware="true"
+232-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:48:13-43
+233            android:exported="false" >
+233-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\user\.gradle\caches\transforms-3\e7ac19a4ee963cc2ee4ea4bfb6417072\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:49:13-37
+234            <intent-filter android:priority="-500" >
+234-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+235                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+235-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+235-->[:firebase_messaging] E:\Company projects\New folder (17)\app source code\foodking-delivery-app\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+236            </intent-filter>
+237        </service>
+238
+239        <uses-library
+239-->[androidx.window:window:1.2.0] C:\Users\user\.gradle\caches\transforms-3\028cc5225b992ecb753447fcd010b19a\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+240            android:name="androidx.window.extensions"
+240-->[androidx.window:window:1.2.0] C:\Users\user\.gradle\caches\transforms-3\028cc5225b992ecb753447fcd010b19a\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+241            android:required="false" />
+241-->[androidx.window:window:1.2.0] C:\Users\user\.gradle\caches\transforms-3\028cc5225b992ecb753447fcd010b19a\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+242        <uses-library
+242-->[androidx.window:window:1.2.0] C:\Users\user\.gradle\caches\transforms-3\028cc5225b992ecb753447fcd010b19a\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+243            android:name="androidx.window.sidecar"
+243-->[androidx.window:window:1.2.0] C:\Users\user\.gradle\caches\transforms-3\028cc5225b992ecb753447fcd010b19a\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+244            android:required="false" />
+244-->[androidx.window:window:1.2.0] C:\Users\user\.gradle\caches\transforms-3\028cc5225b992ecb753447fcd010b19a\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+245
+246        <provider
+246-->[com.google.firebase:firebase-common:20.4.3] C:\Users\user\.gradle\caches\transforms-3\417bbcfc212ca461a9324af564e87d38\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:23:9-28:39
+247            android:name="com.google.firebase.provider.FirebaseInitProvider"
+247-->[com.google.firebase:firebase-common:20.4.3] C:\Users\user\.gradle\caches\transforms-3\417bbcfc212ca461a9324af564e87d38\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:24:13-77
+248            android:authorities="com.inilabs.foodking.delivery.firebaseinitprovider"
+248-->[com.google.firebase:firebase-common:20.4.3] C:\Users\user\.gradle\caches\transforms-3\417bbcfc212ca461a9324af564e87d38\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:25:13-72
+249            android:directBootAware="true"
+249-->[com.google.firebase:firebase-common:20.4.3] C:\Users\user\.gradle\caches\transforms-3\417bbcfc212ca461a9324af564e87d38\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:26:13-43
+250            android:exported="false"
+250-->[com.google.firebase:firebase-common:20.4.3] C:\Users\user\.gradle\caches\transforms-3\417bbcfc212ca461a9324af564e87d38\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:27:13-37
+251            android:initOrder="100" /> <!-- Needs to be explicitly declared on P+ -->
+251-->[com.google.firebase:firebase-common:20.4.3] C:\Users\user\.gradle\caches\transforms-3\417bbcfc212ca461a9324af564e87d38\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:28:13-36
+252        <uses-library
+252-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\user\.gradle\caches\transforms-3\2f970f0f99ae445a9efc7c5b03b2be39\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+253            android:name="org.apache.http.legacy"
+253-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\user\.gradle\caches\transforms-3\2f970f0f99ae445a9efc7c5b03b2be39\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+254            android:required="false" />
+254-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\user\.gradle\caches\transforms-3\2f970f0f99ae445a9efc7c5b03b2be39\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+255
+256        <activity
+256-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\user\.gradle\caches\transforms-3\972a8a64eb9c0816e33efb67a58bb96c\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+257            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+257-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\user\.gradle\caches\transforms-3\972a8a64eb9c0816e33efb67a58bb96c\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+258            android:exported="false"
+258-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\user\.gradle\caches\transforms-3\972a8a64eb9c0816e33efb67a58bb96c\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+259            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+259-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\user\.gradle\caches\transforms-3\972a8a64eb9c0816e33efb67a58bb96c\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+260
+261        <meta-data
+261-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\user\.gradle\caches\transforms-3\79aeb3a05ce10115161e4ffe7cf825f9\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+262            android:name="com.google.android.gms.version"
+262-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\user\.gradle\caches\transforms-3\79aeb3a05ce10115161e4ffe7cf825f9\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+263            android:value="@integer/google_play_services_version" />
+263-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\user\.gradle\caches\transforms-3\79aeb3a05ce10115161e4ffe7cf825f9\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+264
+265        <provider
+265-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\user\.gradle\caches\transforms-3\fb4e2dea54bb3d91629c8042780d73d1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+266            android:name="androidx.startup.InitializationProvider"
+266-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\user\.gradle\caches\transforms-3\fb4e2dea54bb3d91629c8042780d73d1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+267            android:authorities="com.inilabs.foodking.delivery.androidx-startup"
+267-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\user\.gradle\caches\transforms-3\fb4e2dea54bb3d91629c8042780d73d1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+268            android:exported="false" >
+268-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\user\.gradle\caches\transforms-3\fb4e2dea54bb3d91629c8042780d73d1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+269            <meta-data
+269-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\user\.gradle\caches\transforms-3\fb4e2dea54bb3d91629c8042780d73d1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+270                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+270-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\user\.gradle\caches\transforms-3\fb4e2dea54bb3d91629c8042780d73d1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+271                android:value="androidx.startup" />
+271-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\user\.gradle\caches\transforms-3\fb4e2dea54bb3d91629c8042780d73d1\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+272            <meta-data
+272-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+273                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+273-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+274                android:value="androidx.startup" />
+274-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+275        </provider>
+276
+277        <service
+277-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\user\.gradle\caches\transforms-3\dba3556caaa0bd4c658218885bc91b77\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+278            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+278-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\user\.gradle\caches\transforms-3\dba3556caaa0bd4c658218885bc91b77\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+279            android:exported="false" >
+279-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\user\.gradle\caches\transforms-3\dba3556caaa0bd4c658218885bc91b77\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+280            <meta-data
+280-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\user\.gradle\caches\transforms-3\dba3556caaa0bd4c658218885bc91b77\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+281                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+281-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\user\.gradle\caches\transforms-3\dba3556caaa0bd4c658218885bc91b77\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+282                android:value="cct" />
+282-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\user\.gradle\caches\transforms-3\dba3556caaa0bd4c658218885bc91b77\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+283        </service>
+284        <service
+284-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\f6ef5fc2e323b9875b914502da7e57e6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+285            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+285-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\f6ef5fc2e323b9875b914502da7e57e6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+286            android:exported="false"
+286-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\f6ef5fc2e323b9875b914502da7e57e6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+287            android:permission="android.permission.BIND_JOB_SERVICE" >
+287-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\f6ef5fc2e323b9875b914502da7e57e6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+288        </service>
+289
+290        <receiver
+290-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\f6ef5fc2e323b9875b914502da7e57e6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+291            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+291-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\f6ef5fc2e323b9875b914502da7e57e6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+292            android:exported="false" />
+292-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\user\.gradle\caches\transforms-3\f6ef5fc2e323b9875b914502da7e57e6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+293        <receiver
+293-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+294            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+294-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+295            android:directBootAware="false"
+295-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+296            android:enabled="true"
+296-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+297            android:exported="true"
+297-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+298            android:permission="android.permission.DUMP" >
+298-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+299            <intent-filter>
+299-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+300                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+300-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+300-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+301            </intent-filter>
+302            <intent-filter>
+302-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+303                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+303-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+303-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+304            </intent-filter>
+305            <intent-filter>
+305-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+306                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+306-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+306-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+307            </intent-filter>
+308            <intent-filter>
+308-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+309                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+309-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+309-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\user\.gradle\caches\transforms-3\cdf32cb4b775f8d144e484228b51aeb7\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+310            </intent-filter>
+311        </receiver>
+312    </application>
+313
+314</manifest>
